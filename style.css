@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+  background-image: url(bg.webp);
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position-x: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
+  height: 100px;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.logo h4 {
+ color: white;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+h4{
+    font-weight: 200;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+    width: 68%;
+    cursor: pointer;
+}
+
+.btn div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.741);
+   padding: 1.2%;
+   width: 15%;
+    color: white;
+    border-radius: 5px;
+    gap: 10%;
+    flex-direction: row ;
+    cursor: pointer;
+}
+.btn div:hover{
+    background-color: rgba(255, 94, 0, 0.961);
+}
+.btn div::after{
+    background-color: rgba(255, 94, 0, 0.961);
+}
+.btn div:active{
+    background-color: rgba(255, 94, 0, 0.961);
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: 17%;
+    width: 15%;
+    cursor: pointer;
+}
+
+.p2 {
+    background-color: rgba(0, 0, 0, 0.741);
+    height: 6.5vh;
+    width: 43%;
+    color: white;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 23%;
+   display: flex;
+   cursor: pointer;
+}
+.p3 {
+    background-color: rgba(0, 0, 0, 0.741);
+    height: 6.5vh;
+    width: 22%;
+    color: white;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 23%;
+   display: flex;
+   cursor: pointer;
+}
+.person {
+    height: 6.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.person div:hover{
+    background-color: rgba(255, 94, 0, 0.961);
+}
+.person div::after{
+    background-color: rgba(255, 94, 0, 0.961);
+}
+.person div:active{
+    background-color: rgba(255, 94, 0, 0.961);
+}
+
+i{
+    font-size: 17px;
+}
+
+/* ==== MAIN SECTION =====*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+main .welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    overflow-y: scroll; 
+    border-right: 1.5px solid rgb(164, 164, 164);  
+}
+main .welcome::-webkit-scrollbar{
+    display: none;
+}
+.welcome div{
+    padding: 2%;
+}
+.welcome .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ .name{
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+.name p{
+    color: rgb(190, 188, 188);
+    font-size: 14px;
+    margin-top: 5px;
+}
+.t-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9%;
+    width: 17.5%;
+    height: 6.5vh;
+    flex-direction: row;
+    background-color: rgba(255, 94, 0, 0.961);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.menue{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.7%;
+   gap: 8%;
+   align-items: center;
+}
+.menue h4{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-left: -83%;
+}
+
+.m-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 4%;
+    margin-left: -18%;
+    width: 58%;
+    cursor: pointer;
+}
+
+.m-btn div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+   padding: 2.5%;
+    border-radius: 5px;
+    gap: 8%;
+    flex-direction: row ;
+    cursor: pointer;
+}
+.m-btn div:hover{
+    background-color: black;
+    color: white;
+}
+.m-btn div::after{
+    background-color: black;
+    color: white;
+}
+.m-btn div:active{
+    background-color: black;
+    color: white;
+}
+
+
+.f-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin-top: -3%;
+    
+}
+
+.edith{
+}
+.edith div{
+    height: 20px;
+    width: 20px;
+    background: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edith i{
+    margin-top: 4px;
+}
+
+.f-container div{
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+width: 95%;
+flex-direction: column;
+}
+.f-container img{
+    height: 20vh;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.f-container .details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: start;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.f-container h3{
+    font-size: 15px;
+}
+.f-container h5{
+    font-size: 11px;
+    color: gray;
+}
+.f-container p{
+    font-size: 13px;
+}
+
+.f-container .ratting{
+display: flex;
+flex-direction: row;
+width: 100%;
+gap: 10%;
+}
+
+
+/* ==== TASK SECTION ==== */
+
+.task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 8%;
+    width: 40%;
+    height: 100%;
+}
+
+.task .t-task{
+display:flex;
+flex-direction: column;
+width: 100%;
+margin-top: 7%;
+}
+.t-task h4 {
+    margin-bottom: 7%;
+    font-weight: 700;
+}
+.t-months{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4%;
+}
+.t-months div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    flex-direction: column;
+    background-color: rgb(214, 214, 214);
+    padding: 3%;
+    border-top: 4px solid red;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.t-months div h6{
+    margin-bottom: -5%;
+color: grey;
+}
+.t-months div h4{
+    font-weight: 600;
+}
+
+.o-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 7%;
+}
+.order{
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+  column-gap: 8%;
+}
+.order h4{
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: -40%;
+}
+.order p{
+   color: grey;
+    font-size: 12px;
+}
+
+.o-icon{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+    width: 20%;
+}
+
+.o-icon div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+      
+}
+.o-icon div i{
+    margin-top: 4px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.info div{
+width: 30%;
+background-color: rgb(221, 220, 220);
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+padding: 2.2%;
+}
+
+.info div h6{
+    color: grey;
+    font-weight: 400;
+}
+.info div h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.m-container{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 5%;
+    height: 60vh;
+    width: 100%;
+    margin-top: 5%;
+}
+.m-container h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.price{
+    margin-top: -8%;
+}
+.price h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+.price h6{
+    color: rgb(171, 169, 169);
+    font-weight: 400;
+}
+
+.m-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+    width: 100%;
+}
+.b-det{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 1%;
+    margin-top: 2%;
+    border-bottom: 0.5px solid rgb(228, 228, 228);
+    margin-bottom: 4%;
+}
+.det{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4%;
+}
+.det img{
+    height: 10vh;
+    width: 25%;
+    margin-left: -5%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.det h3{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.item p{
+font-size: 11px;
+color: rgb(171, 169, 169);
+}
+.item h5{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(171, 169, 169);
+}
+
+.print{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8%;
+    width: 60%;
+    margin-top: 5%;
+    margin-right: -40%;
+}
+.print div{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(229, 227, 227);
+    border-radius: 6px;
+}
+
+
+.print div:hover{
+    background-color:  rgba(255, 94, 0, 0.961);;
+    color: white;
+}
+.print div::after{
+    background-color:  rgba(255, 94, 0, 0.961);;
+    color: white;
+}
+.print div:active{
+    background-color:  rgba(255, 94, 0, 0.961);;
+    color: white;
+}
+
+ div.b1{
+background-color:  rgba(255, 94, 0, 0.961);
+color: white;
+}
+div.b2{
+    background-color:  black;
+    color: white;
+    }
